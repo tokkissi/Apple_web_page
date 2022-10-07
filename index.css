@@ -1,0 +1,171 @@
+/* base font */
+@font-face {
+  font-family: "SF-Pro";
+  src: url(Fonts/SF-Pro.ttf);
+}
+
+* {
+  font-family: "SF-Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+
+  opacity: 0.95;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  position: fixed;
+  z-index: 9999;
+}
+
+.nav__container {
+  max-width: 1024px;
+  height: 41px;
+
+  margin: auto;
+  padding-bottom: 3px;
+
+  display: flex;
+}
+
+.nav__container div {
+  margin: auto;
+}
+
+.nav__container a {
+  font-size: 12px;
+
+  text-decoration: none;
+  color: rgb(210 211 211);
+}
+
+.nav__container a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.main {
+  padding-top: 44px;
+}
+
+/* section {
+} */
+
+/* .section--product {
+} */
+
+.section--product__container {
+  display: grid;
+  column-gap: 12px;
+  row-gap: 12px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.product--iphone-pro,
+.product--iphone-14,
+.product--watch {
+  height: 736px;
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.product--iphone-pro {
+  background-color: black;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.07143;
+
+  text-align: center;
+}
+
+.product--iphone-pro h2 {
+  color: #f5f5f7;
+}
+
+h3 {
+  font-size: 28px;
+
+  /* margin-bottom: 15px; */
+
+  text-align: center;
+}
+
+.product--iphone-pro h3 {
+  color: #f5f5f7;
+}
+
+.product__textbox {
+  text-align: center;
+  margin-top: 70px;
+
+  z-index: 2;
+}
+
+.product--iphone-pro .product__textbox {
+  margin-top: 100px;
+}
+
+.product__textbox__learn {
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.product__textbox__learn a {
+  font-size: 21px;
+  text-decoration: none;
+
+  line-height: 100%;
+
+  color: #2997ff;
+}
+
+.product__textbox__learn a:hover {
+  text-decoration: underline;
+}
+
+.product__textbox__learn a:nth-child(2) {
+  padding-left: 0.3em;
+}
+
+.product__textbox__learn a:nth-child(2):hover {
+  text-decoration: none;
+}
+
+.product__textbox__learn__left {
+  padding: 15px 0;
+}
+
+.product__textbox__learn__right {
+  padding: 15px 0;
+  margin-left: 35px;
+}
+
+.product__img {
+  /* width: 3008px;
+  height: 736px; */
+  background-size: none;
+  position: absolute;
+
+  z-index: 1;
+}
+
+/* .product__textbox img {
+  left: -50%;
+} */
